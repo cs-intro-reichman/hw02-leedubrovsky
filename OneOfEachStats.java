@@ -2,7 +2,8 @@ import java.util.Random;
 public class OneOfEachStats {
 public static void main(String[] args) {
     int T = Integer.parseInt(args[0]);
-    Random rnd = new Random();
+    int seed = Integer.parseInt(args[1]);
+    Random rnd = new Random(seed);
     int family2 = 0;
     int family3 = 0;
     int family4More = 0;
