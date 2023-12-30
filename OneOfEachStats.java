@@ -2,7 +2,7 @@ import java.util.Random;
 public class OneOfEachStats {
 public static void main(String[] args) {
     int T = Integer.parseInt(args[0]);
-    Random rand = new Random();
+    Random rnd = new Random();
     int family2 = 0;
     int family3 = 0;
     int family4More = 0;
@@ -16,12 +16,12 @@ public static void main(String[] args) {
     
         str = "";
         count = 1;
-        p = rand.nextDouble();
+        p = rnd.nextDouble();
                 
         if (p < 0.5){
                
             while ( p < 0.5 ){
-                p = rand.nextDouble();
+                p = rnd.nextDouble();
                 count++;
                 str += "b "; 
             
@@ -29,7 +29,7 @@ public static void main(String[] args) {
         }else{
     
             while ( p >= 0.5 ){
-                p = rand.nextDouble();
+                p = rnd.nextDouble();
                 count++;
                 str += "g "; 
             
