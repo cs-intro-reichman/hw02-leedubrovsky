@@ -9,7 +9,7 @@ public static void main(String[] args) {
     String str = "";
     double p = 0;
     int count = 1;
-    int sum = 0;
+    double sum = 0;
     
     
     for (int i = 0; i < T; i++){
@@ -55,7 +55,7 @@ public static void main(String[] args) {
             
                         
         
-    double Average = (double)sum/T;
+    double Average = sum/T;
             
             
     System.out.println("Average: " + Average  + " children to get at least one of each gender.");
